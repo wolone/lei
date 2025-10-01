@@ -1,0 +1,37 @@
+{
+  "trae_workflow": {
+    "version": "1.0.0",
+    "description": "Trae AI 专用工作流程系统",
+    "auto_create_directories": true,
+    "auto_reference_requirements": true,
+    "enforce_approval_workflow": true,
+    "default_feature_prefix": "feature-",
+    "default_bug_prefix": "bug-",
+    "supported_formats": [
+      "markdown",
+      "mermaid",
+      "plantuml"
+    ],
+    "ai_assistant": "trae",
+    "workflow_types": {
+      "spec": {
+        "enabled": true,
+        "phases": ["requirements", "design", "tasks", "implementation"]
+      },
+      "bug": {
+        "enabled": true,
+        "phases": ["report", "analyze", "fix", "verify"]
+      },
+      "refactor": {
+        "enabled": true,
+        "phases": ["analysis", "plan", "execute", "validate"]
+      }
+    },
+    "trae_features": {
+      "context_optimization": true,
+      "smart_suggestions": true,
+      "auto_documentation": true,
+      "progress_tracking": true
+    }
+  }
+}
